@@ -23,7 +23,7 @@ talks.getRandom(config.mongodb, function(err, docs) {
     var data = {
         message: message,
         link: getUrl(talk),
-        access_token: 'CAAFZCzimZAdPsBABll2D9nwWSRy3JGZBXYVowpJLHRNbTgwnpuPEZCFScZCwKP4L2r2HkvCW6u7I8ZBsyVRRGJWhJUAeOuiZBOYzCEiqZBS3D2AtLiprAhZBoHv3ZBTZCllFeZAG4M37TettFJBsLarsYErAUjuttsTid2r4rUviKu0orVcC1hx47tzL'
+        access_token: config.workers.facebook.key
     };
     request.post({
         url: 'https://graph.facebook.com/v2.3/me/feed',
